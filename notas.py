@@ -16,7 +16,7 @@ db_port = os.environ['POSTGRES_PORT']
 #Utilizar os dados do env para colocar as informações do banco sem correr o risco do vazamento de dados caso eu suba no github
 
 
-df = pd.read_excel(r'\\192.168.25.245\docsadm$\TI\NF PRODUTOS.xlsx')
+df = pd.read_excel(r'Caminho do arquivo')
 #Transformar o arquivo excel em um dataframe
 
 db_url = f"postgresql+psycopg2://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}"
